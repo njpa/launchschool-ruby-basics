@@ -19,8 +19,8 @@ puts a
 
 # NOTES
 # =====
-# When we pass in the variable `a` as a parameter to `my_value` , the method
-# parameter `b` (a variable local to `my_value` method) is set to point to
+# When we pass in the variable `a` as a parameter to `my_value`, the method
+# parameter `b` (a variable local to the `my_value` method) is set to point to
 # the same object as the local variable `a`.
 # The reassignment of the `b` variable in line 9 sets the variable `b` to point
 # to a different object.  Throughout this process, the `a` variable is still
