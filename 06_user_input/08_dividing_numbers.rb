@@ -58,4 +58,42 @@ puts "#{numerator} / #{denominator} = #{numerator.to_i / denominator.to_i }"
 
 # ALTERNATIVE
 # ==========
-#
+# We can use one `loop` for obtaining and reassigning the `numerator` 
+# variable and another `loop` for obtaining and reassigning the `denominator`
+# variable.
+
+puts "-- ALTERNATIVE"
+
+def valid_number?(number_string)
+  number_string.to_i.to_s == number_string
+end
+
+numerator = nil
+
+loop do
+  puts ">> Numerator: "
+  numerator_try = gets.chomp
+  if valid_number?(numerator_try)
+    numerator = numerator_try
+    break
+  end
+  puts ">> Please enter an integer!"
+end
+
+denominator = nil
+
+loop do
+  puts ">> Denominator: "
+  denominator_try = gets.chomp
+  if valid_number?(denominator_try)
+    unless denominator_try.to_i == 0
+      denominator = denominator_try 
+      break
+    end
+    puts ">> Please do not enter 0 as the denominator!"
+  end
+  puts ">> Please enter an integer!"
+end
+
+puts "#{numerator} / #{denominator} = #{numerator.to_i / denominator.to_i }"
+
