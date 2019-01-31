@@ -19,8 +19,9 @@ end
 # `if.. elsif..else` statement in order to meet the requirements of 
 # this problem. 
 # The `if` and `elsif` statements should explicitly check for conditions
-# using equality operators - unlike how the `case` operator implicitly 
-# compares multiple values to a single case.
+# using equality operators for the same value every time - unlike how the 
+# `case` operator implicitly compares multiple values to a single case using
+# the `when` keyword.
 
 p stoplight
 
