@@ -15,8 +15,8 @@ end
 
 # ANSWER
 # ======
-# We can use `then` after the `when` condition in order to keep every
-# comparison to one line.  
+# We can use the reserved word `then` after the `when` condition in 
+# order to keep every comparison to one line.  
 
 case stoplight
 when 'green' then puts 'Go!'
